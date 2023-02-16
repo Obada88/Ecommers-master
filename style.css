@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+/** Start Navbar**/
+.navbar-brand{
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: 0.5s ease-in;
+}
+.navbar-brand:hover{
+    color: #e53e3e;
+}
+.nav-link{
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #e53e3e;
+    position: relative;
+}
+.active::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #000;
+    left: 0;
+    bottom: -1rem;
+}
+.nav-link:hover{
+    color: #000;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #000;
+    bottom: -1rem;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+
+}
+
+/*** Start Home ***/
+.Home{
+    background-color: #f7f7ff;
+}
+
+.box-img img{
+    max-width: 100%;
+}
+.box-content {
+    margin-top: 5rem;
+}
+.box-content h1{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 15px;
+}
+.box-content h3{
+    font-size: 2rem;
+    text-transform:uppercase;
+    font-weight: 600;
+    letter-spacing: 20px;
+    max-width: 100%;
+}
+.btn{
+    background-color: #e53e3e;
+    color: #fff !important;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 3px;
+}
+
+.box-men{
+    transition: 0.5s;
+}
+.box-men:hover{
+    transform: translateY(1rem);
+}
+
+/*** End Home ***/
+
+/*** Start Feature***/
+.img-feture{
+    background-color: #f7f7ff;
+}
+.box-Feture{
+    position: relative;
+    margin: 1rem;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.box-Feture:hover{
+    transform: translateY(1rem);
+}
+.discont{
+    position: absolute;
+    background: #e53e3e;
+    padding: 0.5rem;
+    color: #fff;
+    border-radius: 5px;
+
+}
+.new-Feture {
+    background: url(img/offer.jpg) no-repeat ;
+    background-size: cover;
+    padding: 50px;
+    margin-top: 3rem;
+}
+/*** End Feature ***/
+
+
+/**** Start New ****/
+.new{
+    position: relative;
+}
+.img-new{
+    background-color: #f7f7ff;
+    margin: 1rem;
+    border-radius: 5px;
+}
+.button-new{
+    background-color: #e53e3e;
+    position: absolute;
+    left:33%;
+    top: 70%;
+    transition: 0.5s;
+    opacity: 0;
+}
+.button-new:hover{
+    opacity: 1;
+}
+/**** End New ****/
+
+/**** Start Sucride****/
+.box-scride input{
+    padding: 1rem;
+}
+/**** End Sucride****/
+
+
+/****** Start Footer*****/
+.footer{
+    background-color: #000;
+}
+.box-sara{
+    margin-top: 5rem;
+}
+.box-sara a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    max-width: 1rem;
+    font-size: 1.3rem;
+}
+.box-sara h3{
+    color: #fff;
+    text-transform: capitalize;
+}
+.product-store{
+    margin: 1rem;
+}
+.product-store img{
+    margin: 1rem;
+}
+.box-explore{
+    margin-top: 5rem;
+}
+.box-explore h3{
+    color: #fff;
+}
+
+.box-explore ul{
+    list-style: none;
+}
+.box-explore ul li a{
+    text-decoration: none;
+    color: #ddd;
+    margin: 0.5rem;
+}
+.follw{
+    margin-top: 5rem;
+    
+}
+.follw h3{
+    color: #fff;
+
+}
+.fa-brands {
+    margin: 1rem;
+    font-size: 1.3rem;
+    background-color: #ddd;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+/****** End Footer ******/
+
+
